@@ -31,24 +31,10 @@ function divide(number){
   console.log("Have a nice day!");
   console.log(" I for got to ask you something");
   rl.question('what is your favorite video game?',thing);
-  
-  
-  
-  
-  
-  
-
-
 }
-function thing(game){ 
-	console.log("cool video game!");
 
-	
-	rl.close();	
+function thing(game){
+	console.log("No kidding!", game," is my favorite too!");
+
+	rl.close();
 }
-	
-	
-	
-	
-	
-	
