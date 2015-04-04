@@ -6,7 +6,7 @@ var rl = readline.createInterface({
   output: process.stdout
 });
 
-rl.question('Hello, would you like to play a game? ', game);
+rl.question('Hello, would you like to play a game? (type yes or no): ', game);
 
 function game(play){
   if(play === "yes"){
