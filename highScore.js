@@ -3,18 +3,20 @@ var _ = require('lodash'),
 
 function newPerson(game, maxScores) {
   var scores = new Firebase("https://guess-a-number.firebaseio.com/"+game+"/scores");
-  
+
   return {
     add: function add(obj) {
       obj.date = new Date().getTime();
-      highScores.push(obj);
+      scores.push(obj);
     },
     list: function list() {
-      setTimeout(function () {
-        console.log(message);
-      }, 1000);
-    }
+      scores.on("value", function(snapshot) {
+        console.log(snapshot.val());
 
+      }, function (errorObject) {
+        console.log("The read failed: " + errorObject.code);
+      });
+    }
   };
 }
 
