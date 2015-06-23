@@ -1,0 +1,26 @@
+{
+  "name": "kid-stuff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "brendan.js",
+  "dependencies": {
+    "firebase": "^2.2.3",
+    "readline": "^0.0.7",
+    "lodash": "^3.6.0",
+    "q": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kreediam/kid-stuff.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kreediam/kid-stuff/issues"
+  },
+  "homepage": "https://github.com/kreediam/kid-stuff#readme"
+}
